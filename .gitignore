@@ -2,10 +2,9 @@
 tracker_data/
 my_tracker/
 
-# 생성된 HTML (생성기 출력물)
-*_board.html
-research_status.html
-analysis_board.html
+# 루트에 생성되는 로컬 HTML (작업물). docs/ 데모는 커밋함.
+/analysis_board.html
+/research_status.html
 
 # python
 __pycache__/

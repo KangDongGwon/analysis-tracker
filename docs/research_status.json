@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "연구 현황 (demo)",
+    "updated": "",
+    "tracks": ["합성", "분석", "실험", "계산", "작성", "투고"],
+    "note": "분석 셀은 analysis_board.json에서 자동 집계. 나머지는 셀 클릭으로 수정."
+  },
+  "projects": [
+    {
+      "name": "ProjectA",
+      "tracks": {
+        "합성": {"s": "done", "note": "synthesized"},
+        "분석": {"s": "auto", "note": ""},
+        "실험": {"s": "prog", "note": "activity test ongoing"},
+        "계산": {"s": "wait", "note": ""},
+        "작성": {"s": "wait", "note": ""},
+        "투고": {"s": "wait", "note": ""}
+      },
+      "bottleneck": {"track": "실험", "note": "activity test ongoing"}
+    },
+    {
+      "name": "ProjectB",
+      "tracks": {
+        "합성": {"s": "prog", "note": "scale-up"},
+        "분석": {"s": "auto", "note": ""},
+        "실험": {"s": "wait", "note": ""},
+        "계산": {"s": "done", "note": "DFT screening"},
+        "작성": {"s": "wait", "note": ""},
+        "투고": {"s": "wait", "note": ""}
+      },
+      "bottleneck": {"track": "합성", "note": "synthesis scale-up"}
+    }
+  ]
+}

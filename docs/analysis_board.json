@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "분석 트래커 (demo)",
+    "updated": "",
+    "stages": ["필요 샘플", "의뢰 (분석센터)", "결과 대기", "결과 수령", "해석 완료"],
+    "topics": ["ProjectA", "ProjectB"]
+  },
+  "centers": [
+    {"name": "lab in-house", "url": "", "note": "DRIFTS · BET · chemisorption (직접 측정, 외부 의뢰 불필요)"},
+    {"name": "공동기기원 (example)", "url": "https://example.org", "note": "가능: XRD · XPS · TEM · ICP · Raman"}
+  ],
+  "records": [
+    {"id": "projecta-001", "topic": "ProjectA", "sample": "Catalyst-X", "analysis": "XRD", "center": "공동기기원 (example)", "stage": "해석 완료", "essential": true, "request_date": "", "result_date": "", "result_link": "", "interpretation": "crystalline phase confirmed", "note": "structure"},
+    {"id": "projecta-002", "topic": "ProjectA", "sample": "Catalyst-X", "analysis": "XPS", "center": "공동기기원 (example)", "stage": "결과 대기", "essential": true, "request_date": "", "result_date": "", "result_link": "", "interpretation": "", "note": "surface oxidation state"},
+    {"id": "projecta-003", "topic": "ProjectA", "sample": "Catalyst-X", "analysis": "BET", "center": "lab in-house", "stage": "필요 샘플", "essential": false, "request_date": "", "result_date": "", "result_link": "", "interpretation": "", "note": "surface area"},
+    {"id": "projectb-001", "topic": "ProjectB", "sample": "Catalyst-Y", "analysis": "TEM", "center": "공동기기원 (example)", "stage": "결과 수령", "essential": true, "request_date": "", "result_date": "", "result_link": "", "interpretation": "", "note": "particle size / dispersion"},
+    {"id": "projectb-002", "topic": "ProjectB", "sample": "Catalyst-Y", "analysis": "H2-TPR", "center": "lab in-house", "stage": "필요 샘플", "essential": false, "request_date": "", "result_date": "", "result_link": "", "interpretation": "", "note": "reducibility"}
+  ]
+}
