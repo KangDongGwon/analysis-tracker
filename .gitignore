@@ -1,0 +1,16 @@
+# 런타임 트래커 데이터 (사용자 로컬)
+tracker_data/
+my_tracker/
+
+# 생성된 HTML (생성기 출력물)
+*_board.html
+research_status.html
+analysis_board.html
+
+# python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
