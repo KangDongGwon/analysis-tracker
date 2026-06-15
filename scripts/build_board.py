@@ -3,7 +3,7 @@
 재생성: python build_board.py"""
 import json, os, datetime, sys
 
-# DATA_DIR: CLI 인자 > env TRACKER_DIR > 기본(KDG 트래커). 범용 엔진 — 어느 폴더든 동작.
+# DATA_DIR: CLI 인자 > env TRACKER_DIR > 기본값(./tracker_data). 범용 엔진 — 어느 폴더든 동작.
 DATA_DIR = (sys.argv[1] if len(sys.argv) > 1 else None) or os.environ.get("TRACKER_DIR") \
     or os.path.join(os.getcwd(), "tracker_data")
 JSON_PATH = os.path.join(DATA_DIR, "analysis_board.json")
